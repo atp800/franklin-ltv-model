@@ -1,0 +1,11 @@
+year / Sub avg spend / non-sub avg spend / no. sub orders / no. non-sub orders / total sales / total orders / average subscriber count 
+
+- can only use fields that would have values for 2024 without increasing complexity
+- certain fields will simpligy model (e.g. including avg daily spend will mean model will just work out avg spend for the year will just be avg daily spend extended over the year
+
+histric ltv query - what does subscribercount mean for non-subscribers? if it;;s just customer count, is that accurate?
+
+
+
+
+Year / avg daily order volume (by category, by sub/non-sub) / total spend up to the current day (by category, by sub/non-sub) / avg daily spend, up to the current day

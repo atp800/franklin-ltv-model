@@ -51,7 +51,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 # Save fitted scaler to use for making predictions
-dump(scaler, 'scaler.joblib')
+dump(scaler, 'Franklin LTV Model/code/scaler.joblib')
 
 # Wrap the Keras model as a scikit-learn compatible estimator
 keras_regressor = KerasRegressor(build_fn=build_model)
@@ -104,7 +104,7 @@ rmse = np.sqrt(test_loss)
 print(f"Test loss: {test_loss}")
 print(f"RMSE on test set: {rmse}")
 
-best_model.save('ltv_model')
+best_model.save('Franklin LTV Model/code/ltv_model')
 
 # Plot the training and validation loss
 plt.figure(figsize=(10, 4))

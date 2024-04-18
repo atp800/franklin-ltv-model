@@ -14,7 +14,7 @@ from joblib import dump, load
 
 
 # Load data and scaler
-df = pd.read_csv('Franklin LTV Model/code/franklin_ltv_forecast_data.csv')
+df = pd.read_csv('path to prediction data file')
 scaler = load('scaler.joblib')
 
 # Remove rows null/missing values
@@ -28,9 +28,9 @@ X = scaler.transform(X)
 
 
 # Load model
-loaded_model = tf.keras.models.load_model('ltv_model')
+loaded_model = tf.keras.models.load_model('Franklin LTV Model/code/ltv_model')
 
 # Make prediction
-prediction = loaded_model.predict()
+prediction = loaded_model.predict()         # predcits avergae LTV for next 12 months
 
 print(prediction)
